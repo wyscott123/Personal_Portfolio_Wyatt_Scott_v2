@@ -181,4 +181,16 @@ section {
   line-height: 2rem;
 }
 
-/*Indep Comps*//*# sourceMappingURL=styles.css.map */
+/*Indep Comps*/
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.main-title h2 span {
+  color: var(--color-secondary);
+}/*# sourceMappingURL=styles.css.map */
