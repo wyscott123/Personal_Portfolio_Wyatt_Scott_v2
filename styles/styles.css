@@ -60,25 +60,21 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(230, 227, 255);
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: slateblue;
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(96, 36, 86);
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(16, 93, 45);
 }
 
 .active {
@@ -129,4 +125,60 @@ section {
   font-size: 1.2rem;
   color: var(--color-grey-2);
   pointer-events: none;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*Header Cont*/
+.header-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+}
+.header-content .left-head {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header-content .left-head .h-shape {
+  transition: a 0.4s ease-in-out;
+  width: 65%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  /*need to input clip path part*/
+}
+.header-content .left-head .image {
+  border-radius: var(--br-sm-2);
+  width: 68%;
+  width: 90%;
+  margin-left: 4rem;
+  background-color: var(--color-black);
+  transition: all 0.4s ease-in-out;
+}
+.header-content .left-head .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.4s ease-in-out;
+}
+.header-content .right-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 18rem;
+}
+.header-content .right-head .name {
+  font: 3rem;
+}
+.header-content .right-head .name span {
+  color: var(--color-secondary);
+}
+.header-content .right-head p {
+  margin: 1.5rem 0;
+  line-height: 2rem;
+}
+
+/*Indep Comps*//*# sourceMappingURL=styles.css.map */
