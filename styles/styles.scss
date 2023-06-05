@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
 }
 
 :root{
@@ -219,6 +218,10 @@ section{
                         width: 2rem;
                         height: 2px;
                         background-color: var(--color-grey-5);
+                    }
+                    li{
+                        list-style-type: circle;
+                        list-style-position: inside;
                     }
                 }
             }
