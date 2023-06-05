@@ -139,7 +139,7 @@ section {
   position: relative;
 }
 .header-content .left-head .h-shape {
-  transition: a 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   width: 65%;
   height: 100%;
   background-color: var(--color-secondary);
@@ -148,21 +148,6 @@ section {
   top: 0;
   z-index: -1;
   /*need to input clip path part*/
-}
-.header-content .left-head .image {
-  border-radius: var(--br-sm-2);
-  width: 68%;
-  width: 90%;
-  margin-left: 4rem;
-  background-color: var(--color-black);
-  transition: all 0.4s ease-in-out;
-}
-.header-content .left-head .image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: all 0.4s ease-in-out;
 }
 .header-content .right-head {
   display: flex;
@@ -183,6 +168,7 @@ section {
 
 /*About*/
 .about-container {
+  zoom: 70%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding-top: 3.5rem;
@@ -238,7 +224,7 @@ section {
   list-style-position: inside;
 }
 .about-container .left-about {
-  padding-right: 5rem;
+  padding-right: 8rem;
 }
 .about-container .left-about p {
   line-height: 2rem;
