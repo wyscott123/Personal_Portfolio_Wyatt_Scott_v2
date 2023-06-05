@@ -85,7 +85,7 @@ section{
 }
 
 //Controls
-.controls{
+.controls {
     position: fixed;
     z-index: 10;
     top: 50%;
@@ -95,12 +95,6 @@ section{
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
-    .active-btn{
-        background-color: var(--color-secondary) !important;
-        i{
-            color: var(--color-white) !important;
-        }
-    }
     .control{
         padding: 1rem;
         cursor: pointer;
@@ -112,12 +106,17 @@ section{
         justify-content: center;
         align-items: center;
         margin: .7rem 0;
-        box-shadow: var(--box-shadow-1);
-        i{
+        box-shadow: var(--box-shadow-1) ;
+        i {
             font-size: 1.2rem;
             color: var(--color-grey-2);
             pointer-events: none;
         }
+    }
+    .active-btn {
+        background-color: var(--color-secondary);
+        transition: all .4s ease-in-out;
+        i { color: var(--color-white); }
     }
 }
 
