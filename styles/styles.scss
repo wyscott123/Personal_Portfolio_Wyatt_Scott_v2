@@ -47,7 +47,12 @@ section{
     position: absolute;
     left: 0;
     top: 0;
-    padding: 3rem 18rem;
+    padding-left: 1rem;
+    padding-right: 10rem;
+    padding-top: 1.5rem;
+    #home{
+        padding: 3rem 18rem;  
+    }
 }
 
 .section{
@@ -229,9 +234,65 @@ section{
     }
 }
 
+.port-container{
+    zoom: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+    grid-gap: 1.25rem;
+    .port-item{
+        border: 1px solid var(--color-grey-5);
+        border-radius: 5px;
+        transition: all .4s ease-in-out;
+        box-shadow: 1px 2px 15px rgba(0,0,0,.1);
+        &:hover{
+            cursor: default;
+            transform: translateY(-5px);
+            border: 1px solid var(--color-secondary);
+            box-shadow: 1px 2px 15px rgba(0,0,0,.32);
+        }
+        .port-text{
+            padding: 1.5rem;
+            display:flex;
+            flex-direction: column;
+            .large-text{
+                font-size: 1.75rem;
+                font-weight: 700;
+                color: var(--color-secondary);
+            }
+            .small-text{
+                padding-top: 2rem;
+                padding-left: 2rem;
+                position: relative;
+                font-size: 1.2rem;
+                color: var(--color-grey-1);
+                letter-spacing: 2px;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 15px;
+                    width: 2rem;
+                    height: 2px;
+                    background-color: var(--color-grey-5);
+                }
+                li{
+                    letter-spacing: 2px;
+                    padding-left: 2rem;
+                    list-style-position: inside;
+                }
+                a{
+                    letter-spacing: 2px;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
 /*Indep Comps*/
 .main-title{
-    text-align: center;
+    text-align: justify;
     h2{
         position: relative;
         text-transform: uppercase;
